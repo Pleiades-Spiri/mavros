@@ -1,9 +1,9 @@
 <launch>
         <!-- vim: set ft=xml noet : -->
         <!-- launch script for Spiri with PX4-based flight controller -->
-
+	
         <arg name="fcu_url" default="/dev/ttyTHS2:921600" />
-        <arg name="gcs_url" default="udp://:14550@192.168.1.92:14557" />
+        <arg name="gcs_url" default="udp://:14550@${SERVER_IP}:14557" />
         <arg name="tgt_system" default="12" />
         <arg name="tgt_component" default="1" />
         <arg name="log_output" default="screen" />
